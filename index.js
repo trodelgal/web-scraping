@@ -50,4 +50,5 @@ const fs = require("fs").promises;
   });
   await fs.writeFile("./newJobs.json", JSON.stringify(newJobs, null, 2));
   await fs.writeFile("./jobs.json", JSON.stringify(data, null, 2));
+  browser.close()
 })();
